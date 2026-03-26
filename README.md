@@ -5,6 +5,10 @@
 
 Built for **RIMES Marathon 2026** by Sanjana Zaman.
 
+### 🗺️ Interactive Impact Map
+You can view the live interactive prioritization map here:
+[View Live Map](https://htmlpreview.github.io/?https://github.com/sanjana-zaman/Netrokona-Flood-Response-Prioritization/blob/main/netrokona_vulnerability_map.html)
+
 ##  What This Tool Does
 
 When flooding occurs in Netrokona District, Bangladesh, this tool answers 
