@@ -1,0 +1,61 @@
+demo:
+  flood_event: August 2024 Netrokona Flash Flood
+  flood_year: 2024
+# Netrokona Flood Vulnerability Configuration - March 2026
+study_area:
+  country: Bangladesh
+  district: Netrokona
+  division: Mymensingh
+  bbox:
+    max_lat: 25.1
+    max_lon: 91.25
+    min_lat: 24.2
+    min_lon: 90.25
+
+# Weights derived from Entropy Weighting Method (EWM) 
+# Verified for 13 variables in Netrokona District
+ewm_topsis_weights:
+  flood_history: 0.4029
+  vuln_age: 0.1391
+  road_access: 0.1391
+  dist_shelter: 0.0643
+  slope: 0.0617
+  rainfall: 0.0565
+  education: 0.0543
+  dist_health: 0.0543
+  contact_river: 0.0167
+  drainage_density: 0.0057
+  elevation: 0.0018
+  geology: 0.0018
+  soil_type: 0.0018
+
+# Priority factors for final risk assessment
+priority_weights:
+  flood_weight: 0.75
+  vulnerability: 0.25
+
+# FFWC Hydrological Monitoring Points
+ffwc_stations:
+  - id: SW263
+    name: Durgapur
+    river: Someswari
+    danger_level: 12.55
+  - id: SW262
+    name: Bijoypur
+    river: Someswari
+    danger_level: 13.2
+  - id: SW263.1
+    name: Kalmakanda
+    river: Someswari
+    danger_level: 6.55
+  - id: SW72
+    name: Khaliajuri
+    river: Dhanu
+    danger_level: 6.55
+  - id: SW36
+    name: Jariajanjail
+    river: Kangsha
+    danger_level: 10.55
+
+gee:
+  project: resilienceai-netrokona

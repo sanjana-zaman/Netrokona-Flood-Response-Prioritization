@@ -1,0 +1,36 @@
+name: resilienceai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - geopandas
+  - rasterio
+  - rasterstats
+  - scikit-learn
+  - folium
+  - osmnx
+  - networkx
+  - jupyter
+  - notebook
+  - matplotlib
+  - numpy
+  - pandas
+  - requests
+  - shapely
+  - pyproj
+  - mapclassify
+  - pingouin
+  - scipy                  # needed for zoom, distance_transform_edt, pearsonr
+  - pip
+  - pip:
+    - earthengine-api
+    - geemap
+    - elevation
+    - hdx-python-api
+    - factor_analyzer       # needed for KMO + Bartlett tests (Sarker et al.)
+    - planetary-computer    # needed for Esri LULC via STAC
+    - pystac-client         # needed for planetary computer STAC queries
+    - urllib3               # explicit pin to avoid requests conflicts
+
+    
